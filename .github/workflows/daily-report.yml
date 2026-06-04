@@ -2,9 +2,8 @@ name: Cursor Usage Report
 
 on:
   schedule:
-    # 10:50 IST (GMT+05:30), daily — Asia/Kolkata, no DST
-    - cron: "50 10 * * *"
-      timezone: "Asia/Kolkata"
+    # 10:55 AM IST = 05:25 UTC (GitHub schedule uses UTC; IST has no DST)
+    - cron: "25 5 * * *"
   workflow_dispatch:
 
 permissions:
