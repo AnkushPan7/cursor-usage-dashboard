@@ -2,9 +2,9 @@ name: Cursor Usage Report
 
 on:
   schedule:
-  # 19:15 IST (GMT+05:30), Mon–Fri — Asia/Kolkata, no DST
-  - cron: "15 19 * * 1-5"
-    timezone: "Asia/Kolkata"
+    # 10:50 IST (GMT+05:30), daily — Asia/Kolkata, no DST
+    - cron: "50 10 * * *"
+      timezone: "Asia/Kolkata"
   workflow_dispatch:
 
 permissions:
