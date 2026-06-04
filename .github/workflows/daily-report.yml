@@ -2,9 +2,9 @@ name: Cursor Usage Report
 
 on:
   schedule:
-    # 11:10 AM IST = 05:40 UTC (GitHub schedule uses UTC; IST has no DST)
+    # 7:05 PM IST = 13:35 UTC (GitHub schedule uses UTC; IST has no DST)
     # Push schedule changes at least 1 hour before target time.
-    - cron: "40 5 * * *"
+    - cron: "35 13 * * *"
   workflow_dispatch:
   repository_dispatch:
     types: [daily-report]
