@@ -8,7 +8,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- (add items here before the next release)
+- Daily report cron limited to **Monday–Friday** (`1-5`); weekends no longer receive Google Chat updates.
 
 ## [1.1.0] - 2026-05-22
 

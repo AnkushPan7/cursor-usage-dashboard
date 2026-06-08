@@ -1,10 +1,10 @@
 # Triggers the daily report workflow on GitHub at an exact local time.
-# Use Windows Task Scheduler to run this daily at 10:55 AM IST.
+# Use Windows Task Scheduler weekdays only (Mon–Fri) at 10:55 AM IST.
 #
 # Setup once:
 #   1. Create a GitHub PAT with "repo" + "workflow" scopes.
 #   2. Set env var:  [System.Environment]::SetEnvironmentVariable("GITHUB_PAT", "ghp_...", "User")
-#   3. Task Scheduler → Create Task → Daily 10:55 AM → Action:
+#   3. Task Scheduler → Create Task → Weekly Mon–Fri 10:55 AM → Action:
 #        Program: powershell.exe
 #        Args: -NoProfile -ExecutionPolicy Bypass -File "C:\path\to\scripts\triggerGithubReport.ps1"
 
